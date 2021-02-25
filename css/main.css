@@ -35,20 +35,12 @@ li {
 }
 
 img{
-    max-width: 80% !important;
+    max-width: 100% !important;
     margin: 0 auto;
     transition: .2s ease-in-out;
     border-radius: 3px !important;
     transition: .3s ease;
 }
-
-img:hover{
-    max-width: 100% !important;
-    margin: 0 auto;
-    transition: .2s ease;
-    border-radius: 3px !important;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 1px;
