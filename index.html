@@ -1,28 +1,71 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<section id="intro">
-    <div class="flex-row-between">
-        <h1>Hi 👋</h1>
-        <button id="theme-toggle" onclick="modeSwitcher()">
-            <div></div>
-        </button>
-    </div>
-    <p>Maecenas euismod, ante eu mollis tempus, justo tellus tempus dui, non suscipit tellus diam vel ipsum. Phasellus
-        euismod auctor <a href="#">condimentum</a>. Aenean at ex dolor. Praesent eget venenatis erat, sit amet cursus
-        nulla. Vestibulum
-        rutrum, turpis id aliquam sagittis.
-    </p>
-</section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Notes - Blog</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-<section class="posts">
-    <h3>BLOG</h3>
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time></li>
-        {% endfor %}
-    </ul>
-</section>
+<body>
+    <header id="hero">
+        <h4>
+            Olá!👋
+        </h4>
+ 
+        <p>
+            Eu sou o Ben. 
+            <br><br>
+            Esse é meu experimento mais recente, um blog estático.
+            É apenas um blog simples, minimalista com cores legais.
+            <br><br>
+            Nele, irei tentar escrever com certa frequencia minhas ideias, o que ando
+            estudando, experiências ou consumindo ultimamente.
+        </p>
+    </header>
+
+    <section id="posts">
+        <h5>Publicados recentemente:</h5>
+        <ul>
+            <li>
+                <a href="./posts/postbase.html">PRIMEIRO POST</a>
+                <p id="data">2021 02 25</p>
+            </li>
+
+            <li>
+                <a href="#" class="desabilitado">PRÓXIMO POST</a>
+                <p id="data">---- -- --</p>
+            </li>
+
+            <li>
+                <a href="#" class="desabilitado">PRIMEIRO POST</a>
+                <p id="data">---- -- --</p>
+            </li>
+
+    </section>
+
+    <section>
+        <h5>Redes sociais</h5>
+        <ul class="social">
+            <li><a href="https://instagram.com/ceobrenofreitas">Instagram</a></li>
+            <li><a href="https://open.spotify.com/playlist/4NA8RAIZbZW0u3sb8fAkYw?si=VEyJDhDdQDCM50xJdKF6Ag">Spotify</a></li>
+            <li><a href="https://discord.gg/SGJrP7XW">Discord</a></li>
+            <li><a href="https://github.com/ceobrenofreitas">Github</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Garagem de Experimentos</h5>
+        <ul class="social">
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Biblioteca</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
