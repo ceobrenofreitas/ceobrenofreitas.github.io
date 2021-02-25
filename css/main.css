@@ -10,6 +10,8 @@
 
 ul {
     list-style-type: none;
+    color: #6f87c7;
+    font-size: .9em;
 }
 
 li {
@@ -22,8 +24,8 @@ li {
 }
 
 .lista li{
-    color: #fefefe;
-    font-size: 10pt;
+    color: #5db376;
+    font-size: .8em !important; 
 }
 
 .desabilitado{
@@ -41,6 +43,7 @@ img{
     border-radius: 3px !important;
     transition: .3s ease;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 1px;
@@ -75,11 +78,18 @@ h1,h2,h3,h4,h5{
     color: #edfcfd;
 }
 
+.title{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1em;
+    font-size: .3em !important;
+    margin: .5em 0;
+}
+
 p{
     font-family: 'Roboto Mono';
     font-weight: 300;
     color: #f4feff;
-    font-size: .7em;
+    font-size: .7em !important;
 }
 
 a{
@@ -136,6 +146,10 @@ a:hover{
 
 section{
     margin: 3em 0 !important;
+}
+
+.footer{
+    text-align: center;
 }
 
 #post{
