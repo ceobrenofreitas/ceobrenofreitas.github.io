@@ -23,6 +23,11 @@ li {
     margin: 5px 0;
 }
 
+  
+.disable, .disable:hover{
+    color: #383e5a !important;
+}
+
 .lista li{
     color: #5db376;
     font-size: .8em !important; 
@@ -171,6 +176,19 @@ section{
     color: #56b6ff;
 }
 
+
+
+/* section área51 */
+
+#area51{
+    width: 100%;
+    text-align: center;
+}
+
+#area51 img{
+    width: 333px;
+    margin: .5em 0;
+}
 .descrição{
     margin: 1em 0 !important;
     margin-top: 0 !important;
