@@ -91,6 +91,7 @@ h1,h2,h3,h4,h5{
 }
 
 p{
+    margin: 15px 0;
     font-family: 'Roboto Mono';
     font-weight: 300;
     color: #f4feff;
@@ -101,7 +102,7 @@ a{
     font-family: 'Roboto Mono';
     font-weight: 600;
     font-size: .7em;
-    color: rgb(245, 91, 71);
+    color: #f55b47;
     text-decoration: none;
     transition: all .15s linear;
 }
