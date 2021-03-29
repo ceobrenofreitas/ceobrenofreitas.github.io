@@ -2,12 +2,6 @@ a{
     font-size: 8pt;
 }
 
-body{
-    max-width: 100vw;
-    width: 100%;
-
-}
-
 #projetos{
     max-width: 100vw;
     width: 100%;
@@ -20,9 +14,15 @@ body{
 
 #projetos h4{
     margin: 2em 0;
+    width: 100%;
+}
+
+.galeria{
+    width: 100%;
 }
 
 .cards{
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -87,58 +87,30 @@ body{
 }
 
 footer{
-    width: 40vw;
+    width: 100%;
     margin: 0 auto;
     position: absolute;
 }
 
 @media screen and (max-width: 1125px) {
     #projetos{
-        padding: 0 20vw;
         transition: .2s all linear;
     }
 
     .cards{
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 
     .cards2{
         margin: 0;
+        padding: 0;
     }
 
     .card{
+        max-width: 99%;
         margin: 10px 0;
-    }
-}
-
-@media screen and (max-width: 769px) {
-
-    #projetos{
-        padding: 0 7vw;
-        transition: .2s all linear;
-    }
-
-    .cards{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cards2{
-        margin: 0;
-    }
-    
-    .card{
-        margin: 10px 0;
-    }
-
-    footer{
-        max-width: 100%;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    ul, h5{
-        max-width: 300px;
     }
 }
