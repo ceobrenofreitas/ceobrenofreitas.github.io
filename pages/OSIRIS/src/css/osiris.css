@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Yatra One', cursive;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.game{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/osiris-background.jpg');
+    background-color: transparent;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    min-height: 100vh;
+    visibility: hidden;
+}
+
+.alerta{
+    z-index: 101;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: cente;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-color: rgba(.5, .5, .5, 1);
+    color: #fefefe;
+}
+
+.alerta-content{
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#alerta-icon{
+    color: #ffd900 !important;
+    animation-name: alerta;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.alerta-content span{
+    margin: 30px;
+    transition: all .2s linear;
+}
+
+.alerta-content span:hover{
+    color: #0e9efd;
+    transition: all .2s linear;
+    transform: scale(1.4);
+}
+
+.frontPage{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background-image: url('https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: pronto;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    visibility: visible;
+}
+
+#conteudo{
+    width: 100vw;
+    max-height: 100vh;
+    z-index: 100;
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    left: 0;
+}
+
+.box{
+    width: 400px;
+    min-width: 300px;
+    height: 500px;
+    min-height: 400px;
+    background-image: url('../images/paper.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: #241b19;
+}
+
+.box h1{
+    width: 100%;
+    margin: .5em auto;
+    margin-top: .8em;
+    text-align: center;
+    color: #4f2020 !important;
+}
+
+.box p{
+    width: 50%;
+    max-height: 180px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 12pt;
+    overflow: auto;
+    color: #4f2020 !important;
+}
+
+.box p::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+    background-color: transparent;
+}
+
+.box p::-webkit-scrollbar-thumb {
+    width: 30px;
+    height: 5px !important;
+    background-color: #000000;
+    border-radius: 30px;
+}
+
+.btn{
+    background-color: #38311f;
+    color: #fefefe;
+    font-weight: bold;
+    margin: 2em 0;
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    transition: all .2s linear;
+}
+
+.btn:hover{
+    background-color: #d16e11;
+    color: #000000;
+    transition: all .2s linear;
+}
+
+.btn:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+
+
+@keyframes pronto {
+
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    40%{
+        opacity: 0;
+        visibility: hidden; 
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+@keyframes alerta{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .box h1{
+        font-size: 1em;
+    }
+
+    .box p{
+        font-size: 17px;
+    }
+
+    .btn{
+        font-size: 8pt;
+    }
+}
